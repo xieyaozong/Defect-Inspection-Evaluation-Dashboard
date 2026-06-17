@@ -1,0 +1,8 @@
+[
+  {"image_id": "part_001", "label": "scratch"},
+  {"image_id": "part_002", "label": "dent"},
+  {"image_id": "part_003", "label": "none"},
+  {"image_id": "part_004", "label": "stain"},
+  {"image_id": "part_005", "label": "scratch"},
+  {"image_id": "part_006", "label": "none"}
+]

@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+.env
+data/*
+!data/.gitkeep
+!data/README.md
+sample_data/demo_images/*
+!sample_data/demo_images/.gitkeep
+outputs/
+.streamlit/
+.DS_Store
+Thumbs.db
