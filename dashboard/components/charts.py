@@ -10,3 +10,9 @@ def confusion_matrix_figure(confusion: pd.DataFrame):
 
 def threshold_curve(curve: pd.DataFrame):
     return px.line(curve, x="threshold", y=["precision", "recall", "f1"], markers=True)
+
+
+def error_bar(matches: pd.DataFrame):
+    counts = matches["status"].value_counts().reset_index()
+    counts.columns = ["status", "count"]
+    return px.bar(counts, x="status", y="count", text="count")

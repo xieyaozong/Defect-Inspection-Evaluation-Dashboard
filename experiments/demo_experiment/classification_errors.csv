@@ -1,0 +1,2 @@
+image_id,label_true,image_path,label_pred,score,status
+part_002,dent,sample_data/demo_images/scratched_metal_cc0.jpg,scratch,0.64,misclassification

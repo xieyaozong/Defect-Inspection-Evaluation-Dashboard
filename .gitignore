@@ -10,6 +10,9 @@ data/*
 !data/README.md
 sample_data/demo_images/*
 !sample_data/demo_images/.gitkeep
+!sample_data/demo_images/scratched_metal_cc0.jpg
+!sample_data/demo_images/stained_metal_cc0.jpg
+!sample_data/demo_images/tempering_colors_steel_cc0.jpg
 outputs/
 .streamlit/
 .DS_Store

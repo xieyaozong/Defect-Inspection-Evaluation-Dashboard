@@ -13,4 +13,4 @@ from dashboard.components.image_gallery import render_table_gallery
 
 st.title("False Positive Gallery")
 result = load_demo_evaluation()
-render_table_gallery(result.false_positives)
+render_table_gallery(result.false_positives, ROOT)

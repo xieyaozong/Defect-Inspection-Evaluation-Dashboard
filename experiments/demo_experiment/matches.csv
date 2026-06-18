@@ -1,0 +1,9 @@
+image_id,label_true,image_path,label_pred,score,status
+part_001,scratch,sample_data/demo_images/scratched_metal_cc0.jpg,scratch,0.93,true_positive
+part_002,dent,sample_data/demo_images/scratched_metal_cc0.jpg,scratch,0.64,misclassification
+part_003,none,sample_data/demo_images/tempering_colors_steel_cc0.jpg,dent,0.78,false_positive
+part_004,stain,sample_data/demo_images/stained_metal_cc0.jpg,none,0.0,false_negative
+part_005,scratch,sample_data/demo_images/scratched_metal_cc0.jpg,scratch,0.88,true_positive
+part_006,none,sample_data/demo_images/tempering_colors_steel_cc0.jpg,none,0.0,true_negative
+part_007,stain,sample_data/demo_images/stained_metal_cc0.jpg,stain,0.71,true_positive
+part_008,dent,sample_data/demo_images/scratched_metal_cc0.jpg,dent,0.52,true_positive

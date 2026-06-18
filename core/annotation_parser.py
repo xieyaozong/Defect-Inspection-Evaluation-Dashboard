@@ -10,4 +10,7 @@ def load_annotations(path: Path | str) -> pd.DataFrame:
     missing = required - set(data.columns)
     if missing:
         raise ValueError(f"Annotation file missing columns: {sorted(missing)}")
-    return data[["image_id", "label"]].copy()
+    columns = ["image_id", "label"]
+    if "image_path" in data.columns:
+        columns.append("image_path")
+    return data[columns].copy()

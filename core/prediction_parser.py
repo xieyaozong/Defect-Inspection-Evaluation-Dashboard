@@ -10,4 +10,9 @@ def load_predictions(path: Path | str) -> pd.DataFrame:
     missing = required - set(data.columns)
     if missing:
         raise ValueError(f"Prediction file missing columns: {sorted(missing)}")
-    return data[["image_id", "label", "score"]].copy()
+    columns = ["image_id", "label", "score"]
+    if "image_path" in data.columns:
+        columns.append("image_path")
+    data = data[columns].copy()
+    data["score"] = pd.to_numeric(data["score"], errors="raise")
+    return data

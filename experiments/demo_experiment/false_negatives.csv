@@ -1,0 +1,2 @@
+image_id,label_true,image_path,label_pred,score,status
+part_004,stain,sample_data/demo_images/stained_metal_cc0.jpg,none,0.0,false_negative

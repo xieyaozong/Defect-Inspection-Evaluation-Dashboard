@@ -1,0 +1,2 @@
+image_id,label_true,image_path,label_pred,score,status
+part_003,none,sample_data/demo_images/tempering_colors_steel_cc0.jpg,dent,0.78,false_positive
