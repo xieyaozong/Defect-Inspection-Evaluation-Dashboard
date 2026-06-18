@@ -2,15 +2,14 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
-import os
-import pandas as pd
 from core.annotation_parser import load_annotations
 from core.evaluator import EvaluationResult, evaluate
 from core.prediction_parser import load_predictions
+import os
+import pandas as pd
 
-
-DEFAULT_ANNOTATIONS = Path("sample_data/synthetic_annotations.json")
-DEFAULT_PREDICTIONS = Path("sample_data/synthetic_predictions.json")
+DEFAULT_ANNOTATIONS = Path("sample_data/demo_annotations.json")
+DEFAULT_PREDICTIONS = Path("sample_data/demo_predictions.json")
 
 
 def load_records(

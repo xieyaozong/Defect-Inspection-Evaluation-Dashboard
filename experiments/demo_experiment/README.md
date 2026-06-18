@@ -1,6 +1,6 @@
 # Demo Experiment
 
-This experiment uses the bundled synthetic labels, synthetic predictions, and three small CC0 metal-surface demo images documented in `sample_data/ASSET_SOURCES.md`.
+This experiment uses the bundled demo labels, demo predictions, and three small CC0 metal-surface images documented in `sample_data/ASSET_SOURCES.md`.
 
 Run:
 

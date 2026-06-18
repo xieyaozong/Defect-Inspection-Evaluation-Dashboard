@@ -17,8 +17,8 @@ from dashboard.components.metric_cards import render_error_cards, render_metric_
 st.set_page_config(page_title="Defect Inspection Evaluation", layout="wide")
 st.title("Defect Inspection Evaluation")
 
-annotations = Path(os.getenv("ANNOTATIONS_PATH", ROOT / "sample_data" / "synthetic_annotations.json"))
-predictions = Path(os.getenv("PREDICTIONS_PATH", ROOT / "sample_data" / "synthetic_predictions.json"))
+annotations = Path(os.getenv("ANNOTATIONS_PATH", ROOT / "sample_data" / "demo_annotations.json"))
+predictions = Path(os.getenv("PREDICTIONS_PATH", ROOT / "sample_data" / "demo_predictions.json"))
 threshold = st.slider("Confidence threshold", 0.0, 1.0, float(os.getenv("DEFAULT_THRESHOLD", "0.5")), 0.01)
 
 result = load_demo_evaluation(annotations, predictions, threshold)

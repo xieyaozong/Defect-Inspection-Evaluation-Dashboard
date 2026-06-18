@@ -15,8 +15,8 @@ from core.threshold_optimizer import sweep_thresholds
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--annotations", type=Path, default=Path("sample_data/synthetic_annotations.json"))
-    parser.add_argument("--predictions", type=Path, default=Path("sample_data/synthetic_predictions.json"))
+    parser.add_argument("--annotations", type=Path, default=Path("sample_data/demo_annotations.json"))
+    parser.add_argument("--predictions", type=Path, default=Path("sample_data/demo_predictions.json"))
     parser.add_argument("--threshold", type=float, default=0.5)
     parser.add_argument("--output-dir", type=Path, default=Path("outputs/demo_experiment"))
     return parser.parse_args()

@@ -33,8 +33,8 @@ def write_json(path: Path, records: list[dict]) -> None:
 
 def main() -> None:
     sample_dir = Path("sample_data")
-    write_json(sample_dir / "synthetic_annotations.json", ANNOTATIONS)
-    write_json(sample_dir / "synthetic_predictions.json", PREDICTIONS)
+    write_json(sample_dir / "demo_annotations.json", ANNOTATIONS)
+    write_json(sample_dir / "demo_predictions.json", PREDICTIONS)
     print(f"Wrote sample JSON files under {sample_dir}")
     print("Demo images are tracked separately; see sample_data/ASSET_SOURCES.md")
 

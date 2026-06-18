@@ -1,10 +1,8 @@
 from __future__ import annotations
 
-import json
-
 from core.data_loader import load_demo_evaluation
 from core.report_generator import report_json, write_report
-
+import json
 
 def test_report_json_contains_error_sections() -> None:
     payload = json.loads(report_json(load_demo_evaluation()))

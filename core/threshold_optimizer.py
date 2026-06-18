@@ -1,8 +1,7 @@
 from __future__ import annotations
 
-import pandas as pd
 from core.evaluator import evaluate
-
+import pandas as pd
 
 def sweep_thresholds(
     annotations: pd.DataFrame,
